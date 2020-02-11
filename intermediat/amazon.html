@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Amazon</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body {
+			margin: 0;
+			font-family: Helvetica, Arial, Geneva, sans-serif;
+		}
+
+		.container {
+			width: 1200px;
+			margin: 0 auto;
+		}
+
+		header {
+			background-color: #232f3e;
+			width: 100%;
+			height: 80px;
+			display: flex;
+		}
+
+		.burgermenu {
+			width: 28px;
+			height: 28px;
+			padding: 8px;
+			border-radius: 2px;
+			border: 1px solid white;
+			text-align: center;
+			margin: 6px;
+		}
+
+		.burgermenu img {
+			width: 100%;
+		}
+
+		.logoarea {
+			width: 120px;
+			margin: 20px 8px;
+		}
+
+		.logoarea img {
+			width: 100%;
+		}
+
+		nav {
+			display: flex;
+		}
+
+		.search {
+			margin-left: 40px;
+		}
+
+		.search select {
+			height: 44px;
+			width: 60px;
+			background-color: #f3f3f3;
+			border-radius: 8px 0px 0px 8px;
+			margin-right:  0;
+		}
+
+		#searchfield {
+			height: 38px;
+			margin-left: -4px;
+			width: 280px;
+		}
+
+		#searchbutton {
+			background-color: #febd69;
+			border-radius: 0px 8px 8px 0px;
+			margin-left: -2px;
+			padding: 2px;
+			width: 44px;
+			height: 44px;
+		}
+
+		#searchbutton img {
+			height: 30px;
+		}
+
+		#flag {
+			width: 40px;
+			margin: 8px;
+		}
+
+		.personalized {
+			color: #cccccc;
+			font-weight: bold;
+			font-size: 12px;
+		}
+
+		.menuname {
+			color: white;
+			font-weight: bold;
+			font-size: 14px;
+		}
+
+		.menuboxes {
+			margin: 12px 3px 0 3px;
+		}
+
+		.menuboxes img {
+			width: 42px;
+		}
+
+		.featured {
+			width: 100%;
+		}
+
+		.featured img {
+			width: 100%;
+		}
+
+		.promoBoxWide {
+			background-color: white;
+			width: 98%;
+			padding: 10px;
+			height: 260px;
+			margin: 5px;
+		}
+
+		.promocontent {
+			height: 240px;
+			float: left;
+			padding: 5px;
+		}
+
+		.promocontent img {
+			height:  100%;
+		}
+
+		.promoflex{
+			display: flex;
+		}
+		.promoBoxSquare{
+			width: 30%;
+			background-color: white;
+			margin: 1%;
+			padding: 10px;
+		}
+		.promoBoxSquare img{
+			width: 100%;
+		}
+		footer {
+			background-color: #232f3e;
+			width: 100%;
+			display: flex;
+			padding: 20px;
+			box-sizing: border-box
+		}
+		.footercolumn{
+			width: 21%;
+			margin: 2%;
+			color: white;
+			font-size: 16px;
+		}
+
+		.gotop {
+			background-color: #37475a;
+			padding: 20px;
+			box-sizing: border-box;
+			text-align: center;
+		}
+
+		.gotop a {
+			text-decoration: none;
+			color: white;
+		}
+
+
+	</style>
+</head>
+<body>
+	
+<div class="container">
+	
+	<header>
+		
+		<div class="burgermenu">
+			<a href="#"><img src="img/burgermenu.png" alt="Menu"></a>
+		</div>
+
+		<div class="logoarea">
+			<a href="#"><img src="img/logo.png" alt="Amazon"></a>
+		</div>
+
+		<nav>
+			<div class="search">
+				<select name="searchlist">
+					<option value="all" selected>Alle</option>
+					<option value="geraete">Amazon Geräte</option>
+					<option value="buecher">Bücher</option>
+					<option value="computer">Computer & Zubehör</option>
+					<option value="games">Games</option>
+				</select>
+				<input type="text" name="searchfield" id="searchfield">
+				<button type="submit" id="searchbutton"><img src="img/search.png" alt="search" id="searchimg"></button>
+				<img src="img/austria.png" alt="Austria" id="flag">
+			</div>
+			<div class="menuboxes">
+				<span class="personalized">Hallo, Name</span><br>
+				<span class="menuname">Konto und Listen</span>
+			</div>
+			<div class="menuboxes">
+				<span class="personalized">Warenrücksendungen</span><br>
+				<span class="menuname">und Bestellungen</span>
+			</div>
+			<div class="menuboxes">
+				<span class="personalized">Entdecken Sie</span><br>
+				<span class="menuname">Prime</span>
+			</div>
+			<div class="menuboxes">
+				<img src="img/cart.png" alt="Shopping Cart">
+			</div>
+			<div class="menuboxes">
+				<span class="personalized">Einkaufs-</span><br>
+				<span class="menuname">wagen</span>
+			</div>
+		</nav>
+
+	</header>
+
+	<div class="featured">
+		<img src="img/bigpromo.png" alt="Big Promotion">
+	</div>
+
+
+	<div class="promoBoxWide">
+		<div class="promocontent"><img src="img/clothes/clothes1.jpg" alt="Clothes Promotion"></div>
+		<div class="promocontent"><img src="img/clothes/clothes2.jpg" alt="Clothes Promotion"></div>
+		<div class="promocontent"><img src="img/clothes/clothes3.jpg" alt="Clothes Promotion"></div>
+		<div class="promocontent"><img src="img/clothes/clothes4.jpg" alt="Clothes Promotion">0</div>
+		<div class="promocontent"><img src="img/clothes/clothes5.jpg" alt="Clothes Promotion"></div>
+		<div class="promocontent"><img src="img/clothes/clothes6.jpg" alt="Clothes Promotion"></div>
+		<div class="promocontent"><img src="img/clothes/clothes7.jpg" alt="Clothes Promotion"></div>
+		<div class="promocontent"><img src="img/clothes/clothes8.jpg" alt="Clothes Promotion"></div>
+	</div>
+
+	<div class="promoflex">
+		<div class="promoBoxSquare">
+			<h2>Stark reduzierte Produkte aus allen Kategorien</h2>
+			<img src="img/columns/square1.jpg" alt="square">
+		</div>
+		<div class="promoBoxSquare">
+			<h2>Stark reduzierte Produkte aus allen Kategorien</h2>
+			<img src="img/columns/sqaure2.jpg" alt="square">
+		</div>
+		<div class="promoBoxSquare">
+			<h2>Stark reduzierte Produkte aus allen Kategorien</h2>
+			<img src="img/columns/square5.jpg" alt="square">
+		</div>
+	</div>
+
+	<div class="promoBoxWide">
+		<div class="promocontent"><img src="img/clothes/clothes1.jpg" alt="Clothes Promotion"></div>
+		<div class="promocontent"><img src="img/clothes/clothes2.jpg" alt="Clothes Promotion"></div>
+		<div class="promocontent"><img src="img/clothes/clothes3.jpg" alt="Clothes Promotion"></div>
+		<div class="promocontent"><img src="img/clothes/clothes4.jpg" alt="Clothes Promotion">0</div>
+		<div class="promocontent"><img src="img/clothes/clothes5.jpg" alt="Clothes Promotion"></div>
+		<div class="promocontent"><img src="img/clothes/clothes6.jpg" alt="Clothes Promotion"></div>
+		<div class="promocontent"><img src="img/clothes/clothes7.jpg" alt="Clothes Promotion"></div>
+		<div class="promocontent"><img src="img/clothes/clothes8.jpg" alt="Clothes Promotion"></div>
+	</div>
+
+	<div class="gotop">
+		<p><a href="#top">Zurück zum Seitenanfang</a></p>
+	</div>
+	<footer>
+		<div class="footercolumn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</div>
+		<div class="footercolumn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</div>
+		<div class="footercolumn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</div>
+		<div class="footercolumn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</div>
+	</footer>
+
+</div>
+
+</body>
+</html>
