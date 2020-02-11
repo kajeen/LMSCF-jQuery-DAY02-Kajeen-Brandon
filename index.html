@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic1</title>
+	<style>
+		.fotos{
+			display: flex;
+			column-count: 3;
+			
+		}
+		img{
+			width: 300px;
+		}
+		/* #present, #santa, #bell{
+			display: none;
+		} */
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="fotos">
+		<img src="img/1.png" alt="present" class="f1">
+		<!-- <div id="present">You've clicked on the present</div> -->
+		<img src="img/2.png" alt="santa" class="f2">
+		<!-- <div id="santa">You've clicked on the Santa</div> -->
+		<!-- <img src="img/3.png" alt="Christmas bell" class="f3"> -->
+		<!-- <div id="bell">You've clicked on the Christmas bell</div> -->
+		<img src="img/1.png" alt="present" class="f1">
+	</div>
+	<div class="fotos">
+		<img src="img/1.png" alt="present" class="f1">
+		<img src="img/2.png" alt="santa" class="f2">
+		<img src="img/1.png" alt="present" class="f1">
+	</div>
+	<div class="fotos">
+		<img src="img/2.png" alt="santa" class="f2">
+		<img src="img/1.png" alt="present" class="f1">
+		<img src="img/2.png" alt="santa" class="f2">
+	</div>
+
+	
+	<script>
+		// $(document).ready(function(){
+		// 	$(".f1").click(function(){
+		// 		$("#present").show();
+		// 	});
+		// 	$(".f2").click(function(){
+		// 		$("#santa").show();
+		// 	});
+		// 	$(".f2").click(function(){
+		// 		$("#bell").show();
+		// 	});
+		// });
+		$(document).ready(function(){
+			$(".f2").click(function(){
+				$(this).css("opacity", "0");
+			});
+		});
+	</script>
+</body>
+</html>
